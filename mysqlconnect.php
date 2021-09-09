@@ -1,5 +1,5 @@
 <?php
-$servername = "localhost"; $db = "testdb1"; $user = "dbuser1"; $pwd = "losen1";
+$servername = "localhost"; $db = "user_system"; $user = "dbadmin"; $pwd = "losen1";
 
 function getAllUsers(){
    global $servername, $db, $user, $pwd;     
