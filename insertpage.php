@@ -5,7 +5,7 @@ $conn = new mysqli($servername, $user, $pwd, $db);  // Create connection
 if ($conn->connect_error) { // Check connection
         die("Connection failed: " . $conn->connect_error);
 }
-if (!empty($_POST["first_name"]) || !empty($_POST["last_name"]) || !empty($_POST["username"])) {
+if (!empty($_POST["first_name"]) && !empty($_POST["last_name"]) && !empty($_POST["username"])) {
 $stmt = $conn->prepare("INSERT INTO users (first_name, last_name, username) VALUES (?, ?, ?)");
 $stmt->bind_param("sss", $firstname, $lastname, $username);
 
