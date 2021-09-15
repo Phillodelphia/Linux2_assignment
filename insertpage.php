@@ -15,10 +15,10 @@ $username = $_POST["username"];
 $stmt->execute();
 
 echo "<h1>Sucessfully created new account!</h1>";
-echo "<p><a href="index.html">Head back to the main site</a></p>";
+echo "<p><a href='index.html'>Head back to the main site</a></p>";
 }
 else {
 echo "<h1>Error: You haven't entered all the fields.</h1>";
-echo "<p><a href="insertpage.html">Try inputting again</a></p>";
+echo "<p><a href='insertpage.html'>Try inputting again</a></p>";
 }
 ?>
